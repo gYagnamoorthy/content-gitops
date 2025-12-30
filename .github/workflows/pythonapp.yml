@@ -23,6 +23,6 @@ jobs:
     - name: Build & Push Image
       run: |
         cd ./python
-        docker --username gcyagnam --password dckr_pat_F9sE_M0xf5Xdjf-g9LjZ_jfTDMk
+        docker login --username gcyagnam --password dckr_pat_F9sE_M0xf5Xdjf-g9LjZ_jfTDMk
         docker image build -t gcyagnam/gitops:hellov1.0 .
         docker push gcyagnam/gitops:hellov1.0
